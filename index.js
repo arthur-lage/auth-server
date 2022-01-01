@@ -17,9 +17,9 @@ mongoose.connect(dbUri, {
   useUnifiedTopology: true,
 });
 
+app.use(cors())
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(routes);
-app.use(cors())
 
 app.listen(PORT, () => console.log("Running on port " + PORT));

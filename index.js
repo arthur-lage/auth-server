@@ -1,5 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require("cors")
+
 const routes = require("./routes.js");
 
 require("dotenv").config();
@@ -18,5 +20,6 @@ mongoose.connect(dbUri, {
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(routes);
+app.use(cors())
 
 app.listen(PORT, () => console.log("Running on port " + PORT));

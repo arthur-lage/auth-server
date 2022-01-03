@@ -2,7 +2,7 @@
 
 # 🔗 Link for the client side of the project
 
-[Devs Form](https://github.com/arthur-lage/auth)
+[Auth](https://github.com/arthur-lage/auth)
 
 # 💻 Technologies used in this project
 
